@@ -1,0 +1,348 @@
+<html lang="en">
+
+<head>
+
+
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+    <title>Record - Responsive Bootstrap Table Design</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="table.css" rel="stylesheet">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Google web font  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <style>
+        body {
+            background: #373B44;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4286f4, #373B44);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: 'Heebo', sans-serif;
+        }
+        
+        .customcolor {
+            background: #bdc3c7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        .invalid-feedback {
+            color: white;
+        }
+        
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        input[type=phone],
+        input[type=address],
+        input[type=state],
+        input[type=zip] {
+            border-left: 2px solid blue;
+            border-bottom: 2px solid black;
+            border-top-style: unset;
+            border-right-style: unset;
+        }
+        
+        .fa {
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="demo">
+    <!-- Unique ID Begin -->
+    <div id="tbl">
+        <!-- Table Style 1 Begin -->
+        <div class="text-center">
+            <hr>
+            <h3><span class="label label-default">Responsive Table</span></h3>
+            <hr>
+        </div>
+        <div class="animatedParent no-more-tables">
+            <!-- Container Start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Table Record Begin -->
+                        <div class="table-responsive tbl-one">
+                            <table class="table table-bordered bor-bot one-color">
+                                <thead>
+                                    <tr>
+                                        <th>Srno.</th>
+                                        <th class="size-one">First Name</th>
+                                        <th class="size-one">Last Name</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Address</th>
+                                        <th>State</th>
+                                        <th>Zip</th>
+                                        <th>Phone</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="thum-photo">
+                                    <tr>
+                                        <th data-title="Srno."><img src="image/photo-1.jpg" class="img-responsive img-thumb"></th>
+                                        <td data-title="First Name">Max </td>
+                                        <td data-title="Last Name">Well</td>
+                                        <td data-title="Email">email@gmail.com</td>
+                                        <td data-title="PAS">123456</td>
+                                        <td data-title="Address">ABC</td>
+                                        <td data-title="State">Shri Lanka</td>
+                                        <td data-title="Zip">10th</td>
+                                        <td data-title="Phone">80/100</td>
+                                        <td data-title="Link"><a href="#" type="button" class="btn btn-success btn-xs">Click</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <th data-title="Srno."><img src="image/photo-1.jpg" class="img-responsive img-thumb"></th>
+                                        <td data-title="First Name">Max </td>
+                                        <td data-title="Last Name">Well</td>
+                                        <td data-title="Email">email@gmail.com</td>
+                                        <td data-title="PAS">123456</td>
+                                        <td data-title="Address">ABC</td>
+                                        <td data-title="State">Shri Lanka</td>
+                                        <td data-title="Zip">10th</td>
+                                        <td data-title="Phone">80/100</td>
+                                        <td data-title="Link"><a href="#" type="button" class="btn btn-success btn-xs">Click</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <th data-title="Srno."><img src="image/photo-1.jpg" class="img-responsive img-thumb"></th>
+                                        <td data-title="First Name">Max </td>
+                                        <td data-title="Last Name">Well</td>
+                                        <td data-title="Email">email@gmail.com</td>
+                                        <td data-title="PAS">123456</td>
+                                        <td data-title="Address">ABC</td>
+                                        <td data-title="State">Shri Lanka</td>
+                                        <td data-title="Zip">10th</td>
+                                        <td data-title="Phone">80/100</td>
+                                        <td data-title="Link"><a href="#" type="button" class="btn btn-success btn-xs">Click</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <th data-title="Srno."><img src="image/photo-1.jpg" class="img-responsive img-thumb"></th>
+                                        <td data-title="First Name">Max </td>
+                                        <td data-title="Last Name">Well</td>
+                                        <td data-title="Email">email@gmail.com</td>
+                                        <td data-title="PAS">123456</td>
+                                        <td data-title="Address">ABC</td>
+                                        <td data-title="State">Shri Lanka</td>
+                                        <td data-title="Zip">10th</td>
+                                        <td data-title="Phone">80/100</td>
+                                        <td data-title="Link"><a href="#" type="button" class="btn btn-success btn-xs">Click</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <th data-title="Srno."><img src="image/photo-1.jpg" class="img-responsive img-thumb"></th>
+                                        <td data-title="First Name">Max </td>
+                                        <td data-title="Last Name">Well</td>
+                                        <td data-title="Email">email@gmail.com</td>
+                                        <td data-title="PAS">123456</td>
+                                        <td data-title="Address">ABC</td>
+                                        <td data-title="State">Shri Lanka</td>
+                                        <td data-title="Zip">10th</td>
+                                        <td data-title="Phone">80/100</td>
+                                        <td data-title="Link"><a href="#" type="button" class="btn btn-success btn-xs">Click</a> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <hr>
+                    <h3><span class="label label-default">Responsive Registration Form</span></h3>
+                    <hr>
+                </div>
+                <div class="row customcolor">
+                    <div class="col">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustomUsername"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-users"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="First Name" aria-describedby="inputGroupPrepend" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustomUsername"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-user-friends"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Last Name" aria-describedby="inputGroupPrepend" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustomUsername"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                        <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a email.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom01"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" id="validationCustom01" placeholder="Password" aria-describedby="inputGroupPrepend" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom02"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" id="validationCustom02" placeholder="Conform Password" aria-describedby="inputGroupPrepend" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom02"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-address-card"></i></span>
+                                        </div>
+                                        <input type="address" class="form-control" id="validationCustom02" placeholder="Address" aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a Address.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom04"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-map-marker"></i></i></span>
+                                        </div>
+                                        <input type="state" class="form-control" id="validationCustom04" placeholder="State" aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a State.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom05"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-location-arrow"></i></span>
+                                        </div>
+                                        <input type="state" class="form-control" id="validationCustom05" placeholder="Zip" aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a Zip.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="validationCustom03"></label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-phone-square "></i></span>
+                                        </div>
+                                        <input type="phone" class="form-control" id="validationCustom03" placeholder="phone #" aria-describedby="inputGroupPrepend" required>
+                                        <div class="invalid-feedback">
+                                            Please choose a phonenumber.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label " for="invalidCheck">
+                                  Agree to terms and conditions
+                                </label>
+                                    <div class="invalid-feedback text-center">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </form>
+
+                        <script>
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function() {
+                                'use strict';
+                                window.addEventListener('load', function() {
+                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                    var forms = document.getElementsByClassName('needs-validation');
+                                    // Loop over them and prevent submission
+                                    var validation = Array.prototype.filter.call(forms, function(form) {
+                                        form.addEventListener('submit', function(event) {
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="text-center ">
+            <p class="small ">© Copyright 2019 - Hamza Masood</p>
+            <br>
+        </div>
+        <!--  Latest jQuery Plugins -->
+        <!-- Bootstrap JavaScript plugins -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+        <script>
+            var password = document.getElementById("validationCustom01"),
+                confirm_password = document.getElementById("validationCustom02");
+
+            function validatePassword() {
+                if (password.value != confirm_password.value) {
+                    confirm_password.setCustomValidity("Passwords Don't Match");
+                } else {
+                    confirm_password.setCustomValidity('');
+                }
+            }
+
+            password.onchange = validatePassword;
+            confirm_password.onkeyup = validatePassword;
+        </script>
+</body>
+
+</html>
